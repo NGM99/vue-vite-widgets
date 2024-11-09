@@ -7,7 +7,7 @@ const menu = ref(false)
 const menuItems = [
   {
     title: 'Form',
-    w: 4,
+    w: 6,
     h: 10,
     widget: 'Form',
     props: {}

@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import WidgetCard from '../../components/base/WidgetCard.vue' 
+import WidgetCard from '../../components/base/WidgetCard.vue'
+import { useWidgetsStore } from '../../store/widgetsStore'
+
+const store = useWidgetsStore()
+
 </script>
 
 <template>
@@ -20,6 +24,17 @@ import WidgetCard from '../../components/base/WidgetCard.vue'
             title="Item"
           ></v-expansion-panel>
         </v-expansion-panels>
+        <v-btn
+          class="mt-1"
+          @click="store.addWidget({
+            w: 4, 
+            h: 10, 
+            widget: 'Table',
+            props: {},
+          })"
+        >
+          Add Widget
+        </v-btn>
       </v-container>
     </template>
   </WidgetCard>
