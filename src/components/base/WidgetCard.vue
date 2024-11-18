@@ -23,7 +23,7 @@ const props = defineProps({
         @click="store.removeWidget(props.index)"
       />
     </template>
-    <v-card-item class="no-drag">
+    <v-card-item class="no-drag pt-0">
       <slot name="body" />
     </v-card-item>
   </v-card>

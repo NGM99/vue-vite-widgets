@@ -19,6 +19,13 @@ const menuItems = [
     widget: 'Table',
     props: {}
   },
+  {
+    title: 'Customer Table',
+    w: 4,
+    h: 12,
+    widget: 'CustomerTable',
+    props: {}
+  },
 ]
 </script>
 
